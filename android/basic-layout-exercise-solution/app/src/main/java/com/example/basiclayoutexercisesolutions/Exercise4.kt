@@ -128,7 +128,7 @@ fun Trolley() {
             onClick = { /* Handle click */ },
             modifier = Modifier
                 .align(Alignment.BottomEnd)
-                .padding(32.dp)
+                .padding(16.dp)
         ) {
             Text("🛒")
         }
