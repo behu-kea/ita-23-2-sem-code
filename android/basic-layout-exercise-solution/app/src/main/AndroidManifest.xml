@@ -23,7 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExerciseOne" />
+        <activity android:name=".Exercise1" />
+        <activity android:name=".Exercise2" />
+        <activity android:name=".Exercise3" />
+        <activity android:name=".Exercise4" />
+        <activity android:name=".Konfetti" />
     </application>
 
 </manifest>
