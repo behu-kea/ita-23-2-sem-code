@@ -69,5 +69,5 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-    implementation("nl.dionsegijn:konfetti-compose:2.0.1")
+    implementation("nl.dionsegijn:konfetti-compose:2.0.4")
 }
