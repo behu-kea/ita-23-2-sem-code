@@ -32,18 +32,14 @@ class Konfetti : ComponentActivity() {
             var position by remember {
                 mutableStateOf(2f)
             }
-
-            val myList = remember { mutableStateListOf<Party>() }
-
+            
             Button(onClick = {
-                // Trigger confetti by adding a Party
-                println("asdsd")
                 position = 5f;
             }) {
                 Text(
-                    text = "Spray confetti" + position.toString())
+                    text = "Spray confetti" + position.toString()) // this text changes, state is working
             }
-            
+
             KonfettiView(
                 modifier = Modifier.fillMaxSize(),
                 parties = listOf(Party(
@@ -58,27 +54,4 @@ class Konfetti : ComponentActivity() {
             )
         }
     }
-}
-
-@Composable
-fun PartyAnimation(
-    modifier: Modifier = Modifier,
-    duration: Int
-) {
-    KonfettiView(
-        modifier = modifier,
-        parties = listOf(
-            Party(
-                speed = 0f,
-                timeToLive = (duration * 1000).toLong(),
-                maxSpeed = 30f,
-                damping = 0.9f,
-                angle = Angle.TOP,
-                spread = 360,
-                colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
-                emitter = Emitter(duration = 1000, TimeUnit.MILLISECONDS).max(500),
-                position = Position.Relative(0.5, 0.3)
-            )
-        )
-    )
 }
