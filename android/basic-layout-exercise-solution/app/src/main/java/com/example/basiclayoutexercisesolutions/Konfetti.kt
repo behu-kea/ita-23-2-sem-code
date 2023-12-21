@@ -17,8 +17,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import nl.dionsegijn.konfetti.compose.KonfettiView
 import nl.dionsegijn.konfetti.core.Angle
 import nl.dionsegijn.konfetti.core.Party
@@ -30,26 +28,33 @@ class Konfetti : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val particles = remember { mutableStateListOf<Party>() }
+
+            var position by remember {
+                mutableStateOf(2f)
+            }
+
+            val myList = remember { mutableStateListOf<Party>() }
 
             Button(onClick = {
                 // Trigger confetti by adding a Party
-                particles += Party(
+                println("asdsd")
+                position = 5f;
+            }) {
+                Text(
+                    text = "Spray confetti" + position.toString())
+            }
+            
+            KonfettiView(
+                modifier = Modifier.fillMaxSize(),
+                parties = listOf(Party(
                     speed = 0f,
                     maxSpeed = 30f,
                     damping = 0.9f,
                     spread = 360,
                     colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
                     emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
-                    position = Position.Absolute(1f, 1f)
-                )
-            }) {
-                Text(text = "Spray confetti")
-            }
-
-            KonfettiView(
-                modifier = Modifier.fillMaxSize(),
-                parties = particles
+                    position = Position.Absolute(position, 1f)
+                ))
             )
         }
     }
