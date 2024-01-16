@@ -33,6 +33,7 @@ class Konfetti : ComponentActivity() {
                     text = "Spray confetti" + position.toString()) // this text changes, state is working
             }
 
+
             KonfettiView(
                 modifier = Modifier.fillMaxSize(),
                 parties = listOf(Party(
