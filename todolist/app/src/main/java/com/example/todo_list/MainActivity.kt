@@ -5,7 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
@@ -23,8 +26,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.key.onKeyEvent
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.todo_list.models.Item
 import com.example.todo_list.ui.theme.TodolistTheme
 
@@ -34,7 +40,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             var todoList: MutableList<Item> by remember {
-                mutableStateOf(mutableStateListOf<Item>())
+                mutableStateOf(mutableStateListOf())
             }
 
             var checkListText by remember {
@@ -42,17 +48,26 @@ class MainActivity : ComponentActivity() {
             }
 
             Column {
-                Text(text = "Todo list")
+                Text(text = "Todo list", fontSize = 30.sp,
+                    modifier = Modifier
+                        .fillMaxWidth(),
+                    textAlign = TextAlign.Center)
+                
+                Spacer(modifier = Modifier.size(30.dp))
+                
+                Status(todoList)
 
-                TextField(value = checkListText, onValueChange = {
-                    checkListText = it;
-                })
+                Row {
+                    TextField(value = checkListText, onValueChange = {
+                        checkListText = it;
+                    })
 
-                Button(onClick = {
-                    todoList.add(Item(checkListText))
-                    checkListText = "";
-                }) {
-                    Text(text = "Create todo")
+                    Button(onClick = {
+                        todoList.add(Item(checkListText))
+                        checkListText = "";
+                    }) {
+                        Text(text = "Create todo")
+                    }
                 }
 
                 LazyColumn() {
@@ -75,6 +90,12 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+@Composable
+fun Status(todoList: MutableList<Item>) {
+    val checkedItems = todoList.filter { it.isChecked }
+    Text(text = "You have ${todoList.size} items. ${checkedItems.size} is checked")
 }
 
 @Composable
