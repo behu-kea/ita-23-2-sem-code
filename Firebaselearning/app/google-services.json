@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064804718602",
+    "project_id": "kotlin-test-72cbb",
+    "storage_bucket": "kotlin-test-72cbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064804718602:android:9c032fe68a7ed70ab3e7f3",
+        "android_client_info": {
+          "package_name": "com.example.firebase_learning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcKxcQI5cMaffM2WoCIx_Fz9yjdMA2KxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
