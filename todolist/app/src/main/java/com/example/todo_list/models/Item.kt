@@ -1,9 +1,14 @@
 package com.example.todo_list.models
 
-data class Item(
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+
+ class Item(
     val name: String,
-    var isChecked: Boolean = false
+    isChecked: Boolean = false
 ) {
+    var isChecked: Boolean by mutableStateOf(isChecked)
     override fun toString(): String {
         return "Item(name='$name', isChecked=$isChecked)"
     }

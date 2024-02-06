@@ -1,5 +1,6 @@
 package com.example.kotlin_intro
 
+import android.util.Log
 
 
 fun main() {
@@ -63,6 +64,11 @@ fun main() {
     println(encodedArray);
 
     println(numberCypherDecoder(encodedArray))
+
+    println(transformArray(listOf(1, 2, 3, 4, 5)))
+
+
+
 }
 
 // Exercise 2
@@ -125,4 +131,20 @@ fun numberCypherDecoder(codeList: MutableList<Int>): String {
     return decodedString;
 }
 
+fun transformArray(listOfNumbers: List<Int>?): List<Int> {
+    val transformedArray = mutableListOf<Int>();
+    if (listOfNumbers != null) {
+        for (number in listOfNumbers) {
+            val transformedNumber: Int;
+            if(number % 2 == 0) {
+                transformedNumber = number / 2;
+            } else {
+                transformedNumber = (number * 3) + 1;
+            }
 
+            transformedArray.add(transformedNumber)
+        }
+    }
+
+    return transformedArray
+}

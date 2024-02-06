@@ -21,11 +21,13 @@ import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.key.onKeyEvent
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
@@ -48,7 +50,7 @@ class MainActivity : ComponentActivity() {
             }
 
             Column {
-                Text(text = "Todo list", fontSize = 30.sp,
+                Text(text = stringResource(id = R.string.app_name), fontSize = 30.sp,
                     modifier = Modifier
                         .fillMaxWidth(),
                     textAlign = TextAlign.Center)
@@ -77,10 +79,7 @@ class MainActivity : ComponentActivity() {
                                 isChecked ->
                                     // This sucks. We cant just say item.isChecked = isChecked because Compose UI dont know that the list was changed!
                                     // Therefore we have to actually change the list in order for Compose UI to know the change
-                                    val index = todoList.indexOf(item)
-                                    if (index != -1) {
-                                        todoList[index] = item.copy(isChecked = isChecked)
-                                    }
+                                    item.isChecked = isChecked
                             },
                             onClicked = {
                                 todoList.remove(item)
@@ -95,7 +94,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Status(todoList: MutableList<Item>) {
     val checkedItems = todoList.filter { it.isChecked }
-    Text(text = "You have ${todoList.size} items. ${checkedItems.size} is checked")
+    Text(text = stringResource(R.string.test, todoList.size, checkedItems.size))
 }
 
 @Composable

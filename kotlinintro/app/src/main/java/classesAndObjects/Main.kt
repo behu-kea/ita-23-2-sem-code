@@ -81,5 +81,9 @@ fun main() {
     val kitchenLamp = Lamp();
     val bathroomLamp = Lamp(false);
 
+    var a:String = "";
+    println(a)
+
+
 
 }
