@@ -33,6 +33,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -48,22 +49,47 @@ import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
 import com.example.note_app.ui.theme.NoteappTheme
 import kotlin.math.log
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.Exclude
+import com.google.firebase.firestore.firestore
+
+const val TAG = "notesapp"
 
 data class Note (
-    val id: Int = 0,
     val title: String = "",
-    val noteText: String = ""
+    val noteText: String = "",
+    var id: String? = null
 )
 
 class MainActivity : ComponentActivity() {
+    val db = Firebase.firestore;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val note1: Note = Note(1, "Title 1", "Text 1")
-        val note2: Note = Note(2, "Title 2", "Text 2")
-        val notes: List<Note> = listOf(note1, note2);
 
         setContent {
-            val navController = rememberNavController()
+            val navController = rememberNavController();
+            var newNote: Note by remember {
+                mutableStateOf(Note("", ""))
+            }
+
+            val notes: MutableList<Note> by remember {
+                mutableStateOf(mutableStateListOf())
+            }
+
+            db.collection("notes")
+                .get()
+                .addOnSuccessListener { result ->
+                    for (document in result) {
+                        val note = document.toObject(Note::class.java).apply {
+                            id = document.id // Set the document ID as the note's ID
+                        };
+                        notes.add(note);
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    Log.w(TAG, "Error getting documents.", exception)
+                }
+
             NavHost(navController = navController, startDestination = "overview") {
                 composable("overview") {
                     OverviewScreen(
@@ -75,18 +101,28 @@ class MainActivity : ComponentActivity() {
                 }
                 composable(
                     "detail/{noteId}",
-                    arguments = listOf(navArgument("noteId") { type = NavType.IntType })
+                    arguments = listOf(navArgument("noteId") { type = NavType.StringType })
                 ) { backStackEntry ->
-                    val noteId = backStackEntry.arguments?.getInt("noteId") ?: return@composable;
-                    Log.d("benjamin", noteId.toString());
+                    val noteId = backStackEntry.arguments?.getString("noteId") ?: return@composable;
                     val note: Note = notes[0];
-                    Log.d("benjamin", note.noteText);
                     NoteDetailScreen(note, onNoteChanged = {}, onSaveNote = {});
                 }
                 composable(
                     "detail/new"
                 ) {
-                    NoteDetailScreen();
+                    NoteDetailScreen(newNote, onSaveNote = {
+                        db.collection("notes")
+                            .add(newNote)
+                            .addOnSuccessListener { documentReference ->
+                                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+
+                            }
+                            .addOnFailureListener { e ->
+                                Log.w(TAG, "Error adding document", e)
+                            }
+                    }, onNoteChanged = {
+                        newNote = it;
+                    });
                 }
             }
         }
@@ -176,7 +212,7 @@ fun NoteDetailScreen(note: Note? = null, onNoteChanged: (Note) -> Unit = {}, onS
             .padding(padding)
             .padding(16.dp)) {
                 OutlinedTextField(
-                    value = if (note != null ) {note.title} else { "Write your title here"},
+                    value = note?.title ?: "Write your title here",
                     onValueChange = {
                         if (note != null) {
                             onNoteChanged(note.copy(title = it))
@@ -189,7 +225,7 @@ fun NoteDetailScreen(note: Note? = null, onNoteChanged: (Note) -> Unit = {}, onS
 
             Spacer(modifier = Modifier.height(16.dp))
                 OutlinedTextField(
-                    value = if (note != null) {note.noteText} else { "Please write your text here"},
+                    value = note?.noteText ?: "Please write your text here",
                     onValueChange = {
                         if (note != null) {
                             onNoteChanged(note.copy(noteText = it))
@@ -202,7 +238,6 @@ fun NoteDetailScreen(note: Note? = null, onNoteChanged: (Note) -> Unit = {}, onS
                     textStyle = TextStyle(fontSize = 16.sp),
                     maxLines = Int.MAX_VALUE // Make it expandable
                 )
-
         }
     }
 }
