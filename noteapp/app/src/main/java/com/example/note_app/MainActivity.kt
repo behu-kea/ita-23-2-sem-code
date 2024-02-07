@@ -73,7 +73,7 @@ class MainActivity : ComponentActivity() {
             }
 
             val notes: MutableList<Note> by remember {
-                mutableStateOf(mutableStateListOf())
+                mutableStateOf(mutableStateListOf(Note("asd", "asd")))
             }
 
             db.collection("notes")
