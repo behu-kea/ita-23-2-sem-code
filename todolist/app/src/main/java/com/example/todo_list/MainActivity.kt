@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
             }
 
             var checkListText by remember {
-                mutableStateOf("")
+                mutableStateOf("asd")
             }
 
             Column {

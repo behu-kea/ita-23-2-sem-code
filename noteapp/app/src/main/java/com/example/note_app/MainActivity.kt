@@ -76,20 +76,6 @@ class MainActivity : ComponentActivity() {
                 mutableStateOf(mutableStateListOf(Note("asd", "asd")))
             }
 
-            db.collection("notes")
-                .get()
-                .addOnSuccessListener { result ->
-                    for (document in result) {
-                        val note = document.toObject(Note::class.java).apply {
-                            id = document.id // Set the document ID as the note's ID
-                        };
-                        notes.add(note);
-                    }
-                }
-                .addOnFailureListener { exception ->
-                    Log.w(TAG, "Error getting documents.", exception)
-                }
-
             NavHost(navController = navController, startDestination = "overview") {
                 composable("overview") {
                     OverviewScreen(
@@ -110,17 +96,7 @@ class MainActivity : ComponentActivity() {
                 composable(
                     "detail/new"
                 ) {
-                    NoteDetailScreen(newNote, onSaveNote = {
-                        db.collection("notes")
-                            .add(newNote)
-                            .addOnSuccessListener { documentReference ->
-                                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
-
-                            }
-                            .addOnFailureListener { e ->
-                                Log.w(TAG, "Error adding document", e)
-                            }
-                    }, onNoteChanged = {
+                    NoteDetailScreen(newNote, onSaveNote = {}, onNoteChanged = {
                         newNote = it;
                     });
                 }
