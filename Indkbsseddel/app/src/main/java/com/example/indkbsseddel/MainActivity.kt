@@ -3,6 +3,7 @@ package com.example.indkbsseddel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,6 +24,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextDecoration
@@ -50,7 +52,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     Column {
-                        Text(text = "Indkøbsseddel")
+                        Text(text = "Indkøbsseddel", modifier = Modifier.background(MaterialTheme.colorScheme.primary))
                         Text(text = "Du har ${ideas.size} varer. ${checkedIdeas.size} er streget ud")
                         TextField(
                             value = ideaText,
