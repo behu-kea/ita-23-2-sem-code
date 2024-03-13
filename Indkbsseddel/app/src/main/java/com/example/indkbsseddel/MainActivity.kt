@@ -52,19 +52,25 @@ class MainActivity : ComponentActivity() {
                     }
 
                     Column {
-                        Text(text = "Indkøbsseddel", modifier = Modifier.background(MaterialTheme.colorScheme.primary))
+                        Text(
+                            text = "Indkøbsseddel",
+                            modifier = Modifier.background(MaterialTheme.colorScheme.primary)
+                        )
                         Text(text = "Du har ${ideas.size} varer. ${checkedIdeas.size} er streget ud")
                         TextField(
                             value = ideaText,
                             onValueChange = { text ->
                                 ideaText = text
-                            },
-                            keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
-                            keyboardActions = KeyboardActions(onDone = {
-                                ideas.add(GroceryItem(ideaText));
-                                ideaText = ""
-                            })
+                            }
                         )
+
+                        Button(onClick = {
+                            ideas.add(GroceryItem(ideaText));
+                            ideaText = ""
+                        })
+                        {
+                            Text(text = "Create new item")
+                        }
 
                         LazyColumn {
                             items(items = ideas) { idea ->
@@ -77,7 +83,6 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                 }
-
             }
         }
     }

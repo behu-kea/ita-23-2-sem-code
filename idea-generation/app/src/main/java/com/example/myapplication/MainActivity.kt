@@ -40,11 +40,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    var ideas: MutableList<GroceryItem> by remember {
-                        mutableStateOf(mutableStateListOf(GroceryItem("Milk")))
+                    var ideas: MutableList<String> by remember {
+                        mutableStateOf(mutableStateListOf())
                     }
-
-                    val checkedIdeas = ideas.filter { idea -> idea.isChecked }
 
                     var ideaText: String by remember {
                         mutableStateOf("")
@@ -52,36 +50,27 @@ class MainActivity : ComponentActivity() {
 
                     Column {
                         Text(text = "Indkøbsseddel")
-                        Text(text = "Du har ${ideas.size} varer. ${checkedIdeas.size} er streget ud")
+
                         TextField(
                             value = ideaText,
                             onValueChange = { text ->
                                 ideaText = text
-                            },
-                            keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
-                            keyboardActions = KeyboardActions(onDone = {
-                                ideas.add(GroceryItem(ideaText));
-                                ideaText = ""
-                            })
+                            }
                         )
+
+                        Button(onClick = {
+                            ideas.add(ideaText);
+                            ideaText = ""
+                        }) {
+                            Text(text = "Add item")
+                        }
 
                         LazyColumn {
                             items(items = ideas) { idea ->
                                 Row {
                                     Text(
-                                        text = idea.title, style = if (idea.isChecked) {
-                                            TextStyle(textDecoration = TextDecoration.LineThrough)
-                                        } else {
-                                            TextStyle() // Default style or specify your own
-                                        }
+                                        text = idea
                                     )
-
-                                    Checkbox(checked = idea.isChecked, onCheckedChange = {
-                                        idea.isChecked = !idea.isChecked;
-                                    })
-                                    Button(onClick = { ideas.remove(idea) }) {
-                                        Text(text = "Delete")
-                                    }
                                 }
                             }
                         }
