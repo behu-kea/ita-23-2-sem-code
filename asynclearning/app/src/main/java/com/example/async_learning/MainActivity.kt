@@ -23,9 +23,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
+    // Declare the state at class level to make it accessible inside callAsync
+    private var isGreen by mutableStateOf(true)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        callAsync()
         setContent {
             AsynclearningTheme {
                 // A surface container using the 'background' color from the theme
@@ -33,45 +35,29 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    var isGreen by remember {
-                        mutableStateOf(true)
-                    }
-
+                    // Use isGreen state directly here
                     if(isGreen) {
-                        Text(text = "asd", modifier = Modifier.background(Color.Green))
+                        Text(text = "Green", modifier = Modifier.background(Color.Green))
                     } else {
-                        Text(text = "asd", modifier = Modifier.background(Color.Red))
+                        Text(text = "Red", modifier = Modifier.background(Color.Red))
                     }
                 }
             }
         }
+        callAsync()
     }
-}
 
-var scope = CoroutineScope(Dispatchers.Main)
-fun callAsync() {
-    scope.launch {
-        run()
+    private val scope = CoroutineScope(Dispatchers.Main)
+
+    private fun callAsync() {
+        scope.launch {
+            run()
+        }
     }
-}
 
-suspend fun run() {
-    delay(1000)
-}
-
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AsynclearningTheme {
-        Greeting("Android")
+    private suspend fun run() {
+        delay(1000)
+        // Toggle the isGreen state after delay
+        isGreen = !isGreen
     }
 }
