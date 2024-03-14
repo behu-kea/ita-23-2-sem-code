@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     var ideas: MutableList<GroceryItem> by remember {
-                        mutableStateOf(mutableStateListOf(GroceryItem("Milk")))
+                        mutableStateOf(mutableStateListOf())
                     }
 
                     val checkedIdeas = ideas.filter { idea -> idea.isChecked }
