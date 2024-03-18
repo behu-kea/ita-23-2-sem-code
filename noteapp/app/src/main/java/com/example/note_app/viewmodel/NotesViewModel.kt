@@ -34,7 +34,7 @@ class NotesViewModel : ViewModel() {
     fun onSearchInput(_searchText: String) {
         searchText = _searchText
         filteredNotes =
-            notes.filter { note -> note.title.lowercase().contains(searchText.lowercase()) }
+            notes.filter { note -> note.title.lowercase().contains(searchText) }
                 .toMutableList()
     }
 
