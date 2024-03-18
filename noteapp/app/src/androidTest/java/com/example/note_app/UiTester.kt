@@ -31,5 +31,8 @@ class UiTester {
 
         rule.onNodeWithText("Save note")
             .performClick()
+
+        rule.onNodeWithText("olol")
+            .assertExists("The note with title 'olol' was not found in the list.")
     }
 }
