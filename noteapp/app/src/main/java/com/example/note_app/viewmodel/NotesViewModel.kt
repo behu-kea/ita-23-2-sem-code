@@ -54,7 +54,7 @@ class NotesViewModel : ViewModel() {
             try {
                 fetchedNote = notesrepository.getNote(id);
             } catch (error: Exception) {
-                Log.d(TAG, "getNote: " + error)
+                Log.d(TAG, "getNote: " + error);
             }
         }
     }
