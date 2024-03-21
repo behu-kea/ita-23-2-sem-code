@@ -23,7 +23,13 @@ import com.example.note_app.models.Note
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun OverviewScreen(notes: List<Note>, onNoteClicked: (Note) -> Unit, onAddNote: () -> Unit) {
+fun OverviewScreen(
+    notes: List<Note>,
+    notesText: String,
+    onNoteClicked: (Note) -> Unit,
+    onAddNote: () -> Unit,
+    onSearchInput: (String) -> Unit
+) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -38,8 +44,8 @@ fun OverviewScreen(notes: List<Note>, onNoteClicked: (Note) -> Unit, onAddNote: 
     ) { padding ->
         Column(modifier = Modifier.padding(padding)) {
             TextField(
-                value = "",
-                onValueChange = { /* Handle search query change */ },
+                value = notesText,
+                onValueChange = onSearchInput,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),

@@ -1,10 +1,12 @@
 package com.example.note_app.components
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -28,7 +30,8 @@ fun NoteDetailScreen(
     note: Note? = null,
     onNoteChanged: (Note) -> Unit = {},
     onSaveNote: () -> Unit = {},
-    backButtonPressed: () -> Unit
+    backButtonPressed: () -> Unit,
+    onDeleteNote: () -> Unit,
 ) {
     Scaffold(
         topBar = {
@@ -42,8 +45,14 @@ fun NoteDetailScreen(
             )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = onSaveNote) {
-                Text(text = "Save note")
+            Row {
+                FloatingActionButton(onClick = onDeleteNote) {
+                    Text(text = "Delete note")
+                }
+                Spacer(modifier = Modifier.width(12.dp))
+                FloatingActionButton(onClick = onSaveNote) {
+                    Text(text = "Save note")
+                }
             }
         }
     ) { padding ->

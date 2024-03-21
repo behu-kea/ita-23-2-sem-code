@@ -1,8 +1,6 @@
 package com.example.note_app.navigation
 
-import android.util.Log
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -20,11 +18,15 @@ fun AppNavigation(notesViewModel: NotesViewModel) {
     NavHost(navController = navController, startDestination = "overview") {
         composable("overview") {
             OverviewScreen(
-                notesViewModel.notes,
+                notesViewModel.filteredNotes,
+                notesText = notesViewModel.searchText,
                 onNoteClicked = { note ->
                     navController.navigate("detail/${note.documentId}")
                 },
-                onAddNote = { navController.navigate("detail/new") }
+                onAddNote = { navController.navigate("detail/new") },
+                onSearchInput = {
+                    notesViewModel.onSearchInput(it)
+                }
             )
         }
 
@@ -38,7 +40,9 @@ fun AppNavigation(notesViewModel: NotesViewModel) {
                 notesViewModel.saveNote(note);
                 navController.popBackStack()
             },
-                backButtonPressed = { navController.navigate("overview") }
+                backButtonPressed = { navController.navigate("overview") }, onDeleteNote = {
+                    notesViewModel.deleteNote(note);
+                }
             );
         }
 
@@ -52,6 +56,8 @@ fun AppNavigation(notesViewModel: NotesViewModel) {
                 notesViewModel.newNote = it;
             }, backButtonPressed = {
                 navController.popBackStack()
+            }, onDeleteNote = {
+                notesViewModel.deleteNote(notesViewModel.newNote);
             });
         }
     }
