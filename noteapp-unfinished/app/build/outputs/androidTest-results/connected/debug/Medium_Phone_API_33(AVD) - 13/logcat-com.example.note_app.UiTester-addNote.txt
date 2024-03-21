@@ -1,0 +1,313 @@
+03-21 10:57:56.936 20523 20540 I TestRunner: started: addNote(com.example.note_app.UiTester)
+03-21 10:57:56.951 20523 20540 W xample.note_app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-21 10:57:56.951 20523 20540 W xample.note_app: Common causes for lock verification issues are non-optimized dex code
+03-21 10:57:56.951 20523 20540 W xample.note_app: and incorrect proguard optimizations.
+03-21 10:57:56.952 20523 20540 W xample.note_app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-21 10:57:56.952 20523 20540 W xample.note_app: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-21 10:57:56.953 20523 20523 D NotesViewModel: getNote: 1
+03-21 10:57:56.955 20523 20540 W FileTestStorage: Output properties is not supported.
+03-21 10:57:56.955 20523 20540 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+03-21 10:57:56.965 20523 20523 D EventInjectionStrategy: Creating injection strategy with input manager.
+03-21 10:57:56.965 20523 20523 W xample.note_app: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+03-21 10:57:56.965 20523 20523 W xample.note_app: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+03-21 10:57:56.965 20523 20523 W xample.note_app: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+03-21 10:57:56.969 20523 20523 W xample.note_app: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+03-21 10:57:56.969 20523 20523 W xample.note_app: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+03-21 10:57:56.969 20523 20543 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+03-21 10:57:56.969 20523 20523 W xample.note_app: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+03-21 10:57:56.975  1242  1256 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+03-21 10:57:56.976 20523 20543 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+03-21 10:57:56.976 20523 20543 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+03-21 10:57:56.980 20523 20543 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/lib/arm64:/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+03-21 10:57:56.981 20523 20543 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/lib/arm64:/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+03-21 10:57:56.983 20523 20543 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/lib/arm64:/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+03-21 10:57:56.986 20523 20543 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/lib/arm64:/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+03-21 10:57:56.988 20523 20543 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/lib/arm64:/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+03-21 10:57:56.994   612  2052 D ConnectivityService: requestNetwork for uid/pid:10226/20523 activeRequest: null callbackRequest: 3241 [NetworkRequest [ REQUEST id=3242, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+03-21 10:57:56.995 20523 20543 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/lib/arm64:/data/app/~~aZsp6Q-UZdpGGRay9UyiHQ==/com.google.android.gms-N9anugIb2m75Z05KpZnKOQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+03-21 10:57:56.997   612   737 D ConnectivityService: NetReassign [3242 : null → 101] [c 0] [a 1] [i 1]
+03-21 10:57:56.997   612   730 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=3242, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:56.998   612   730 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3242, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:56.998   612   730 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3242, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:56.998   612   730 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3242, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:57.047 20523 20543 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+03-21 10:57:57.054 20523 20543 W xample.note_app: Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (unsupported, reflection, allowed)
+03-21 10:57:57.069 20523 20543 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+03-21 10:57:57.081   612  2052 D ConnectivityService: requestNetwork for uid/pid:10226/20523 activeRequest: null callbackRequest: 3243 [NetworkRequest [ REQUEST id=3244, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+03-21 10:57:57.082   612   737 D ConnectivityService: NetReassign [3244 : null → 101] [c 0] [a 0] [i 0]
+03-21 10:57:57.082   612   730 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=3244, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:57.082   612   730 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3244, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:57.082   612   730 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3244, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:57.082   612   730 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3244, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10226 RequestorUid: 10226 RequestorPkg: com.example.note_app UnderlyingNetworks: Null] ]
+03-21 10:57:57.084 20523 20540 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@baae1da]
+03-21 10:57:57.088 20523 20540 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+03-21 10:57:57.132   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ec000000 0x1ec9e4000]
+03-21 10:57:57.134   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ec9e4000 0x1ed3c8000]
+03-21 10:57:57.134   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ed3c8000 0x1eddac000]
+03-21 10:57:57.146   804  1015 W Parcel  : Expecting binder but got null!
+03-21 10:57:57.148 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: PRE_ON_CREATE
+03-21 10:57:57.150 20523 20523 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+03-21 10:57:57.154 20523 20557 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+03-21 10:57:57.157 20523 20557 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+03-21 10:57:57.161 20523 20557 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+03-21 10:57:57.164 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: CREATED
+03-21 10:57:57.164  1078  1802 D EGL_emulation: app_time_stats: avg=64.98ms min=12.24ms max=1186.52ms count=25
+03-21 10:57:57.164 20523 20523 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@61c5018
+03-21 10:57:57.165 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: STARTED
+03-21 10:57:57.165 20523 20523 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@61c5018
+03-21 10:57:57.166 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: RESUMED
+03-21 10:57:57.166 20523 20523 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@61c5018
+03-21 10:57:57.181   408   548 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10226 pid=0
+03-21 10:57:57.181   408   548 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10226 => denied (199 us)
+03-21 10:57:57.181   408   548 W ServiceManager: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10226 pid=0
+03-21 10:57:57.181   408   548 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10226 => denied (120 us)
+03-21 10:57:57.182   408   548 W ServiceManager: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10226 pid=0
+03-21 10:57:57.182   408   548 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10226 => denied (186 us)
+03-21 10:57:57.183 20523 20554 D HostConnection: createUnique: call
+03-21 10:57:57.184 20523 20554 D HostConnection: HostConnection::get() New Host Connection established 0xb400007462cd5290, tid 20554
+03-21 10:57:57.186 20523 20554 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+03-21 10:57:57.186 20523 20554 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-21 10:57:57.186 20523 20554 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-21 10:57:57.187 20523 20560 D TrafficStats: tagSocket(100) with statsTag=0xffffffff, statsUid=-1
+03-21 10:57:57.187 20523 20554 D EGL_emulation: eglCreateContext: 0xb400007462cd5890: maj 3 min 0 rcv 3
+03-21 10:57:57.188 20523 20554 D EGL_emulation: eglMakeCurrent: 0xb400007462cd5890: ver 3 0 (tinfo 0x76801cc080) (first time)
+03-21 10:57:57.196   804  1015 D EGL_emulation: app_time_stats: avg=3961.76ms min=3961.76ms max=3961.76ms count=1
+03-21 10:57:57.199   222   222 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+03-21 10:57:57.199 20523 20554 I Gralloc4: mapper 4.x is not supported
+03-21 10:57:57.200 20523 20554 D HostConnection: createUnique: call
+03-21 10:57:57.201 20523 20554 D HostConnection: HostConnection::get() New Host Connection established 0xb400007462cd6310, tid 20554
+03-21 10:57:57.201 20523 20554 D goldfish-address-space: allocate: Ask for block of size 0x100
+03-21 10:57:57.201 20523 20554 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1ebff8000 size 0x8000
+03-21 10:57:57.201   222   222 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+03-21 10:57:57.202   221   221 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+03-21 10:57:57.202 20523 20554 W Gralloc4: allocator 4.x is not supported
+03-21 10:57:57.203   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1eddac000 0x1ee790000]
+03-21 10:57:57.204 20523 20554 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+03-21 10:57:57.205   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ee790000 0x1ef174000]
+03-21 10:57:57.205   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f168c000 0x1f2070000]
+03-21 10:57:57.207 20523 20560 W xample.note_app: Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (unsupported, reflection, allowed)
+03-21 10:57:57.222 20523 20554 W Parcel  : Expecting binder but got null!
+03-21 10:57:57.225   612   629 W ziparchive: Unable to open '/data/app/~~HFi9tAtF9HK2PyWVxfZtHw==/com.example.note_app-IBMYWV8JMd86yMM_HtCqcA==/base.dm': No such file or directory
+03-21 10:57:57.227   612   629 I ActivityTaskManager: Displayed com.example.note_app/androidx.activity.ComponentActivity: +133ms
+03-21 10:57:57.234  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3220
+03-21 10:57:57.240  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 0, unlocked = true
+03-21 10:57:57.240  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1919 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=null}, false)
+03-21 10:57:57.241  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:57.253  1663  1663 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+03-21 10:57:57.258  1663  2448 E HwDetectorWithState: (REDACTED) a: %d
+03-21 10:57:57.262 20523 20560 W xample.note_app: Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (unsupported, reflection, allowed)
+03-21 10:57:57.447   804  1015 D EGL_emulation: app_time_stats: avg=4949.12ms min=13.79ms max=177236.41ms count=36
+03-21 10:57:57.453  1078  2090 D OneSearchSuggestProvider: Shut down the binder channel
+03-21 10:57:57.455  1078 11698 I s.nexuslauncher: oneway function results for code 2 on binder at 0xb4000073f2d1e9a0 will be dropped but finished with status UNKNOWN_TRANSACTION
+03-21 10:57:57.474 20523 20523 W xample.note_app: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-21 10:57:57.474 20523 20523 W xample.note_app: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-21 10:57:57.474 20523 20523 W xample.note_app: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+03-21 10:57:57.497   612   798 W InputManager-JNI: Input channel object 'de1412e Splash Screen com.example.note_app (client)' was disposed without first being removed with the input manager!
+03-21 10:57:57.583 20523 20523 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10226; state: ENABLED
+03-21 10:57:57.671  1242  4790 I FontLog : (REDACTED) Received query %s, URI %s
+03-21 10:57:57.672  1242  4790 I FontLog : (REDACTED) Query [%s] resolved to %s
+03-21 10:57:57.677  1242  4790 I FontLog : (REDACTED) Fetch %s end status %s
+03-21 10:57:57.681 20523 20523 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+03-21 10:57:57.681 20523 20523 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+03-21 10:57:57.682  1242  4790 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-21 10:57:57.684  1242  4790 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+03-21 10:57:57.778 20523 20523 D NotesViewModel: getNote: 2
+03-21 10:57:57.816 20523 20523 D Compose Focus: Owner FocusChanged(true)
+03-21 10:57:57.827  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3220
+03-21 10:57:57.827  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 0, unlocked = true
+03-21 10:57:57.827  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1919 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=240]}, false)
+03-21 10:57:57.828  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:57.828 20523 20523 D InsetsController: show(ime(), fromIme=false)
+03-21 10:57:57.828 20523 20523 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{38e76e4 VFED..... .F....ID 0,0-1080,2274 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT_BY_INSETS_API
+03-21 10:57:57.830  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1919 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=240]}, true)
+03-21 10:57:57.830  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:57.830  1482  1482 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+03-21 10:57:57.833  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2023 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+03-21 10:57:57.833  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:57.835  1482  1558 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:57.878  1482  1482 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():168 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+03-21 10:57:57.878  1482  1482 I AndroidIME: AbstractIme.onActivate():91 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+03-21 10:57:57.879  1482  1482 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+03-21 10:57:57.887  1482  1482 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+03-21 10:57:57.887  1482  1482 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+03-21 10:57:57.888  1482  9404 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():202 maybeScheduleAutoPackDownloadForFallback()
+03-21 10:57:57.888  1482  9404 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():196 maybeScheduleAutoPackDownload() for language tag en-US
+03-21 10:57:57.889  1482  1482 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1295 inline flag updated to:false
+03-21 10:57:57.906  1482  1482 I KeyboardWrapper: KeyboardWrapper.consumeEvent():273 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+03-21 10:57:57.911  1482  1482 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():44 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+03-21 10:57:57.911  1482  1482 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:57.912  1482  1482 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():44 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+03-21 10:57:57.913  1482  1482 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:57.918  1482  1482 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:57.918  1482  1482 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():111 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+03-21 10:57:57.918  1482  1482 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():584 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+03-21 10:57:57.918  1482  1482 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():111 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+03-21 10:57:57.919  1482  1482 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():584 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+03-21 10:57:57.920  1482  1482 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():382 No private IME option set to start voice input.
+03-21 10:57:57.921 20523 20523 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+03-21 10:57:57.921 20523 20523 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+03-21 10:57:57.921 11836 11836 D BoundBrokerSvc: onBind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+03-21 10:57:57.921 11836 11836 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+03-21 10:57:57.924   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ec000000 0x1ec9a4000]
+03-21 10:57:57.931   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ec9a4000 0x1ed348000]
+03-21 10:57:57.932 20523 20523 D InsetsController: show(ime(), fromIme=true)
+03-21 10:57:57.935  1482  1482 W InputContextProxyV4: InputContextProxyV4.applyClientDiffInternal():896 Ignore [FetchSuggestions] diff due to stale request: 789<791, inputStateId=754, lastInputStateId=755
+03-21 10:57:57.935  1482  1482 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():111 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+03-21 10:57:57.945 11836 11836 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:57.945 11836 11836 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:57.946 11836 11836 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:57.947 11836 11836 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:57.947 11836 11836 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:57.948 11836 11836 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:57.976  1482  2178 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():442 setKeyboardLayout()
+03-21 10:57:57.997   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1ed348000 0x1edcec000]
+03-21 10:57:58.040 20523 20523 D InsetsController: show(ime(), fromIme=false)
+03-21 10:57:58.040  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1919 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=240]}, true)
+03-21 10:57:58.040  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:58.040  1482  1482 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+03-21 10:57:58.040  1482  1482 W SessionManager: SessionManager.endSession():96 Child session [INPUT_VIEW_SESSION] is not ended while ending session [{INPUT_SESSION=1711015077830, INPUT_VIEW_SESSION=1711015077833, IME_SESSION=1711015077878, TRAINING_CACHE_SESSION=1711015077879}], ending it now.
+03-21 10:57:58.041  1482  1482 W SessionManager: SessionManager.endSession():96 Child session [IME_SESSION] is not ended while ending session [{INPUT_SESSION=1711015077830, INPUT_VIEW_SESSION=1711015077833, IME_SESSION=1711015077878, TRAINING_CACHE_SESSION=1711015077879}], ending it now.
+03-21 10:57:58.044  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():2023 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}]}, true)
+03-21 10:57:58.044  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:58.044  1482  1558 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:58.046  1482  1482 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():168 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+03-21 10:57:58.046  1482  1482 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():159 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+03-21 10:57:58.046  1482  1482 I KeyboardWrapper: KeyboardWrapper.consumeEvent():273 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+03-21 10:57:58.047  1482  1482 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+03-21 10:57:58.047  1482  1482 I AndroidIME: AbstractIme.onDeactivate():213 LatinIme.onDeactivate()
+03-21 10:57:58.048  1482  1482 W SessionManager: SessionManager.endSession():88 Try to end a not begun session [IME_SESSION].
+03-21 10:57:58.048  1482  1482 I AndroidIME: AbstractIme.onActivate():91 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=8, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+03-21 10:57:58.048  1482  1482 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+03-21 10:57:58.048  1482  1482 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+03-21 10:57:58.049  1482  1482 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+03-21 10:57:58.049  1482  9404 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():202 maybeScheduleAutoPackDownloadForFallback()
+03-21 10:57:58.049  1482  1482 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1295 inline flag updated to:false
+03-21 10:57:58.049  1482  9404 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():196 maybeScheduleAutoPackDownload() for language tag en-US
+03-21 10:57:58.049  1482  1482 I KeyboardWrapper: KeyboardWrapper.consumeEvent():273 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+03-21 10:57:58.051  1482  1482 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():44 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+03-21 10:57:58.051  1482  2419 E native  : E0000 00:00:1711015078.050597    2419 keyboard.cc:26] Cannot create a keyboard with 0 valid keys
+03-21 10:57:58.051  1482  1482 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:58.052  1482  1482 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():44 leave 354 height for app when screen height:2274, header height:116 and isFullscreenMode:false, so the max keyboard body height is:1804
+03-21 10:57:58.052  1482  1482 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:58.053  1482  1482 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():117 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+03-21 10:57:58.053  1482  1482 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():111 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+03-21 10:57:58.053  1482  1482 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():584 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+03-21 10:57:58.053  1482  1482 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():111 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+03-21 10:57:58.053  1482  1482 I AndroidIME: KeyboardViewManager.updateKeyboardBodyViewHolderPaddingBottom():584 Set finalPaddingBottom = 0 while keyboardBottomGapFromScreen = 0; navigationHeight = 126
+03-21 10:57:58.054  1482  1482 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():382 No private IME option set to start voice input.
+03-21 10:57:58.055 20523 20523 D InsetsController: show(ime(), fromIme=true)
+03-21 10:57:58.056  1482  1482 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():111 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+03-21 10:57:58.056  1482  2178 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():442 setKeyboardLayout()
+03-21 10:57:58.056 11836 11836 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:58.056 11836 11836 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:58.057 11836 11836 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:58.058 11836 11836 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:58.058 11836 11836 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:58.058 11836 11836 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+03-21 10:57:58.123 20523 20523 D NotesViewModel: getNote: 1
+03-21 10:57:58.143  1482  1482 I KeyboardViewController: KeyboardViewController.lambda$showSelfAndAncestors$6():610 current view doesn't has the priority com.google.android.libraries.inputmethod.accesspoint.widget.AccessPointsBar{67e2323 I.E...... ......ID 110,0-960,116 #7f0b0017 app:id/0_resource_name_obfuscated} to show itself, DEFAULT
+03-21 10:57:58.190  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2266
+03-21 10:57:58.190  1482  1482 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():159 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+03-21 10:57:58.191  1482  1482 I InputBundle: InputBundle.consumeEvent():894 Skip consuming an event as keyboard status is 0
+03-21 10:57:58.191  1482  1482 I KeyboardWrapper: KeyboardWrapper.consumeEvent():273 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+03-21 10:57:58.191  1482  1482 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+03-21 10:57:58.191  1482  1482 I AndroidIME: AbstractIme.onDeactivate():213 LatinIme.onDeactivate()
+03-21 10:57:58.193  1482  2419 E native  : E0000 00:00:1711015078.192108    2419 keyboard.cc:26] Cannot create a keyboard with 0 valid keys
+03-21 10:57:58.197  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1919 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.example.note_app fieldId=-1 fieldName=null extras=null}, true)
+03-21 10:57:58.197  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:58.197  1482  1482 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+03-21 10:57:58.232 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: PAUSED
+03-21 10:57:58.232 20523 20523 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@61c5018
+03-21 10:57:58.237   366   366 D Zygote  : Forked child process 20573
+03-21 10:57:58.241 20573 20573 I e.note_app.test: Late-enabling -Xcheck:jni
+03-21 10:57:58.244   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f2070000 0x1f2a14000]
+03-21 10:57:58.251   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f2a14000 0x1f33f8000]
+03-21 10:57:58.252   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f33f8000 0x1f3ddc000]
+03-21 10:57:58.256   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f0000000 0x1f09e4000]
+03-21 10:57:58.256   804  1015 W Parcel  : Expecting binder but got null!
+03-21 10:57:58.260   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f09e4000 0x1f1038000]
+03-21 10:57:58.267   445   471 I adbd    : jdwp connection from 20573
+03-21 10:57:58.297 20573 20573 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10227; state: ENABLED
+03-21 10:57:58.299 20573 20573 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-21 10:57:58.300 20573 20573 D nativeloader: Configuring classloader-namespace for other apk /system/framework/android.test.mock.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~qiJpsjgLPZpYDCb6ZWpcZA==/com.example.note_app.test-SSk_JYkp0k2sCyt8f4WYtA==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.note_app.test
+03-21 10:57:58.300 20573 20573 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-21 10:57:58.301 20523 20523 D NotesViewModel: getNote: 2
+03-21 10:57:58.301 20573 20573 W e.note_app.test: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*1628045882]#PCL[/system/framework/android.test.mock.jar*849501951]})
+03-21 10:57:58.301 20573 20573 D nativeloader: Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~qiJpsjgLPZpYDCb6ZWpcZA==/com.example.note_app.test-SSk_JYkp0k2sCyt8f4WYtA==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.note_app.test
+03-21 10:57:58.301 20573 20573 W ziparchive: Unable to open '/data/app/~~qiJpsjgLPZpYDCb6ZWpcZA==/com.example.note_app.test-SSk_JYkp0k2sCyt8f4WYtA==/base.dm': No such file or directory
+03-21 10:57:58.301 20573 20573 W ziparchive: Unable to open '/data/app/~~qiJpsjgLPZpYDCb6ZWpcZA==/com.example.note_app.test-SSk_JYkp0k2sCyt8f4WYtA==/base.dm': No such file or directory
+03-21 10:57:58.313 20573 20573 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~qiJpsjgLPZpYDCb6ZWpcZA==/com.example.note_app.test-SSk_JYkp0k2sCyt8f4WYtA==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~qiJpsjgLPZpYDCb6ZWpcZA==/com.example.note_app.test-SSk_JYkp0k2sCyt8f4WYtA==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.note_app.test
+03-21 10:57:58.316 20573 20573 V GraphicsEnvironment: ANGLE Developer option for 'com.example.note_app.test' set to: 'default'
+03-21 10:57:58.316 20573 20573 V GraphicsEnvironment: ANGLE GameManagerService for com.example.note_app.test: false
+03-21 10:57:58.316 20573 20573 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-21 10:57:58.318 20573 20573 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-21 10:57:58.318 20573 20573 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-21 10:57:58.322 20573 20596 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+03-21 10:57:58.322 20573 20596 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+03-21 10:57:58.322 20523 20523 D benjamin: DocumentSnapshot added with ID: com.google.firebase.firestore.DocumentReference@2bec0cce
+03-21 10:57:58.323 20573 20596 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+03-21 10:57:58.335   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f5ce0000 0x1f6334000]
+03-21 10:57:58.345   408   548 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10227 pid=0
+03-21 10:57:58.345   408   548 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10227 => denied (149 us)
+03-21 10:57:58.345   408   548 W ServiceManager: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10227 pid=0
+03-21 10:57:58.346   408   548 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10227 => denied (133 us)
+03-21 10:57:58.346   408   548 W ServiceManager: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10227 pid=0
+03-21 10:57:58.346   408   548 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10227 => denied (125 us)
+03-21 10:57:58.346 20573 20594 D HostConnection: createUnique: call
+03-21 10:57:58.347 20573 20594 D HostConnection: HostConnection::get() New Host Connection established 0xb400007462cd3a90, tid 20594
+03-21 10:57:58.348 20573 20594 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+03-21 10:57:58.349 20573 20594 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-21 10:57:58.349 20573 20594 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-21 10:57:58.350 20573 20594 D EGL_emulation: eglCreateContext: 0xb400007462cd3b50: maj 3 min 0 rcv 3
+03-21 10:57:58.350 20573 20594 D EGL_emulation: eglMakeCurrent: 0xb400007462cd3b50: ver 3 0 (tinfo 0x768819a080) (first time)
+03-21 10:57:58.354   222   222 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+03-21 10:57:58.354 20573 20594 I Gralloc4: mapper 4.x is not supported
+03-21 10:57:58.355 20573 20594 D HostConnection: createUnique: call
+03-21 10:57:58.355 20573 20594 D HostConnection: HostConnection::get() New Host Connection established 0xb400007462cd2e90, tid 20594
+03-21 10:57:58.355 20573 20594 D goldfish-address-space: allocate: Ask for block of size 0x100
+03-21 10:57:58.355 20573 20594 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1ebff8000 size 0x8000
+03-21 10:57:58.356   222   222 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+03-21 10:57:58.356   221   221 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+03-21 10:57:58.356 20573 20594 W Gralloc4: allocator 4.x is not supported
+03-21 10:57:58.357   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f6334000 0x1f6d18000]
+03-21 10:57:58.366 20573 20594 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+03-21 10:57:58.366   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f6d18000 0x1f76fc000]
+03-21 10:57:58.367   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f4000000 0x1f49e4000]
+03-21 10:57:58.374 20573 20594 W Parcel  : Expecting binder but got null!
+03-21 10:57:58.383  1078  2090 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=E2{delegate=w2{logId=389, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=Q1.d0@4e2489f
+03-21 10:57:58.386  1078  1148 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+03-21 10:57:58.387  1582  1794 I AiAiEcho: Predicting[0]:
+03-21 10:57:58.387  1582  1794 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+03-21 10:57:58.388  1582  1794 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+03-21 10:57:58.388  1582  1794 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+03-21 10:57:58.388  1582  1794 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0
+03-21 10:57:58.394   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f8000000 0x1f89e4000]
+03-21 10:57:58.396   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f89e4000 0x1f93c8000]
+03-21 10:57:58.400   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f93c8000 0x1f9dac000]
+03-21 10:57:58.401   383   442 D goldfish-address-space: claimShared: Ask to claim region [0x1f9dac000 0x1fa790000]
+03-21 10:57:58.401   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1fa790000 0x1fb174000]
+03-21 10:57:58.401   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1ff174000 0x1ffb58000]
+03-21 10:57:58.406  1078  1078 E BcSmartspaceCard: No tap action can be set up
+03-21 10:57:58.410   804  1015 D EGL_emulation: app_time_stats: avg=101.09ms min=15.46ms max=1031.47ms count=12
+03-21 10:57:58.444  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3220
+03-21 10:57:58.444  1582  1582 W ContentCaptureService: handleSendEvents() received empty list of events
+03-21 10:57:58.444  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 0, unlocked = true
+03-21 10:57:58.444  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1919 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=2131361913 fieldName=null extras=null}, false)
+03-21 10:57:58.445  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2114 repeatCheckTimes = 2, unlocked = true
+03-21 10:57:58.447 13409 13409 E A       : (REDACTED) [XUiKitFloggerElementsErrorLogger] %s: %s [clientId=%s, featureId=%s, veId=%s, conversionPath=%s]
+03-21 10:57:58.448  1663  1663 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+03-21 10:57:58.448  1663  2448 I GsaVoiceInteractionSrv: (REDACTED) disregardVoiceMatch: %b
+03-21 10:57:58.448  1663  2448 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+03-21 10:57:58.454 13409 13409 I A       : (REDACTED) Created gRPC endpoint to "%s" for service %s
+03-21 10:57:58.465   804  1015 D EGL_emulation: app_time_stats: avg=24.22ms min=8.93ms max=67.02ms count=42
+03-21 10:57:58.473  1078 20604 D OneSearchSuggestProvider: Convert suggest response to search results for query= time=77588757 mResponse list size=0
+03-21 10:57:58.698   612   798 W InputManager-JNI: Input channel object '7db700a Splash Screen com.example.note_app.test (client)' was disposed without first being removed with the input manager!
+03-21 10:57:58.780 20523 20554 D OpenGLRenderer: endAllActiveAnimators on 0xb4000074e2cfde50 (UnprojectedRipple) with handle 0xb4000073f2d23c50
+03-21 10:57:58.783 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: STOPPED
+03-21 10:57:58.784 20523 20523 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@61c5018
+03-21 10:57:58.790 20523 20523 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@61c5018 in: DESTROYED
+03-21 10:57:58.790 20523 20523 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+03-21 10:57:58.791   612   798 W InputManager-JNI: Input channel object '4d1adea com.example.note_app/androidx.activity.ComponentActivity (client)' was disposed without first being removed with the input manager!
+03-21 10:57:58.796   612   798 W InputManager-JNI: Input channel object 'cbdb8f8 com.example.note_app.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+03-21 10:57:58.798 20523 20540 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@baae1da]
+03-21 10:57:58.798 20523 20540 I TestRunner: finished: addNote(com.example.note_app.UiTester)

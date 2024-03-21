@@ -1,0 +1,68 @@
+# 2024-03-21T09:58:00.383Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "UiTester"
+    test_package: "com.example.note_app"
+    test_method: "addNote"
+    start_time {
+      seconds: 1711015077
+      nanos: 294000000
+    }
+    end_time {
+      seconds: 1711015079
+      nanos: 150000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/benjamin-hughes/Documents/projects/ita-23-2-sem-code/noteapp/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_33(AVD) - 13/logcat-com.example.note_app.UiTester-addNote.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/benjamin-hughes/Documents/projects/ita-23-2-sem-code/noteapp/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_33(AVD) - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/benjamin-hughes/Documents/projects/ita-23-2-sem-code/noteapp/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_33(AVD) - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/benjamin-hughes/Documents/projects/ita-23-2-sem-code/noteapp/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_33(AVD) - 13/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/benjamin-hughes/Documents/projects/ita-23-2-sem-code/noteapp/app/build/outputs/androidTest-results/connected/debug/Medium_Phone_API_33(AVD) - 13/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
