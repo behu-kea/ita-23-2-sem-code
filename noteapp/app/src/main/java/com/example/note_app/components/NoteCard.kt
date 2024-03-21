@@ -11,12 +11,14 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.example.note_app.models.Note
 
 @Composable
 fun NoteCard(note: Note, onNoteClicked: (Note) -> Unit) {
     Card(modifier = Modifier
+        .testTag("myButtonTag")
         .padding(horizontal = 16.dp, vertical = 8.dp)
         .fillMaxWidth()
         .clickable { onNoteClicked(note) }

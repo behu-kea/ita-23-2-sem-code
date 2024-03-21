@@ -40,7 +40,9 @@ fun AppNavigation(notesViewModel: NotesViewModel) {
                 notesViewModel.saveNote(note);
                 navController.popBackStack()
             },
-                backButtonPressed = { navController.navigate("overview") }
+                backButtonPressed = { navController.navigate("overview") }, onDeleteNote = {
+                    notesViewModel.deleteNote(note);
+                }
             );
         }
 
@@ -54,6 +56,8 @@ fun AppNavigation(notesViewModel: NotesViewModel) {
                 notesViewModel.newNote = it;
             }, backButtonPressed = {
                 navController.popBackStack()
+            }, onDeleteNote = {
+                notesViewModel.deleteNote(notesViewModel.newNote);
             });
         }
     }

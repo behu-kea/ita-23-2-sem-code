@@ -43,6 +43,11 @@ class NotesViewModel : ViewModel() {
         getNotes();
     }
 
+    fun deleteNote(note: Note) {
+        notesrepository.deleteNote(note);
+        getNotes();
+    }
+
     fun getNote(id: String) {
         Log.d(TAG, "getNote: before before")
         viewModelScope.launch {
