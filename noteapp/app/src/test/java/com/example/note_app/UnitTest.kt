@@ -1,5 +1,6 @@
 package com.example.note_app
 
+import com.example.note_app.utils.getSum
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -9,9 +10,7 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-fun getSum(list: List<Int>): Int {
-    return list.sum()
-}
+
 
 class ExampleUnitTest {
     @Test

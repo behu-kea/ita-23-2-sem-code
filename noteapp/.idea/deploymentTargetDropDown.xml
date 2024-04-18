@@ -2,10 +2,7 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="NotesViewModelTest">
-        <State />
-      </entry>
-      <entry key="UiTester">
+      <entry key="All Tests">
         <State />
       </entry>
       <entry key="app">

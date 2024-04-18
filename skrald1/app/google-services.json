@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "713814025524",
+    "project_id": "notes-12fff",
+    "storage_bucket": "notes-12fff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713814025524:android:e61a9d314b9a2dcfa4b161",
+        "android_client_info": {
+          "package_name": "com.example.skrald1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBriK-evLPaGWO9MT53jjNvs0w6lQx8k1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
