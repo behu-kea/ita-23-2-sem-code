@@ -4,7 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -37,6 +41,8 @@ fun App() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
         ) {
+            val viewModel = ViewModel();
+
             var name by remember {
                 mutableStateOf("")
             }
@@ -59,6 +65,19 @@ fun App() {
                 }
 
                 Text(modifier = Modifier.testTag("name-with-emoji"), text = message)
+
+                LazyColumn {
+                    itemsIndexed(viewModel.notes) { index, note ->
+                        Row {
+                            Text(text = note.title)
+                            Button(onClick = {
+                                viewModel.changeTitle(index)
+                            }) {
+                                Text(text = "Change")
+                            }
+                        }
+                    }
+                }
             }
         }
     }

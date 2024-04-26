@@ -47,6 +47,7 @@ import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority
 import com.google.android.gms.tasks.CancellationTokenSource
 import com.mutualmobile.composesensors.rememberAccelerometerSensorState
+import com.mutualmobile.composesensors.rememberLowLatencyOffBodyDetectSensorState
 import java.io.File
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -77,6 +78,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            /*
             if (shouldShowCamera.value) {
                 CameraView(
                     outputDirectory = outputDirectory,
@@ -93,10 +95,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 )
             }
-
-
-
-            /*
+             */
 
             WorkingwithsensorsTheme {
                 // A surface container using the 'background' color from the theme
@@ -108,8 +107,6 @@ class MainActivity : ComponentActivity() {
                     LocationScreen()
                 }
             }
-
-             */
         }
 
         requestCameraPermission()
@@ -200,6 +197,7 @@ fun LocationScreen() {
                 if (hasLocationPermission(context)) {
                     // Permission already granted, update the location
                     getCurrentLocation(context) { lat, long ->
+                        Log.d("hello", "3")
                         location = "Latitude: $lat, Longitude: $long"
                     }
                 } else {
@@ -223,6 +221,7 @@ private fun hasLocationPermission(context: Context): Boolean {
 }
 
 private fun getCurrentLocation(context: Context, callback: (Double, Double) -> Unit) {
+    Log.d("hello", "getCurrentLocation: ")
     val fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
     if (ActivityCompat.checkSelfPermission(
             context,
@@ -232,6 +231,7 @@ private fun getCurrentLocation(context: Context, callback: (Double, Double) -> U
             Manifest.permission.ACCESS_COARSE_LOCATION
         ) != PackageManager.PERMISSION_GRANTED
     ) {
+        Log.d("hello", "1")
         // TODO: Consider calling
         //    ActivityCompat#requestPermissions
         // here to request the missing permissions, and then overriding
@@ -243,10 +243,14 @@ private fun getCurrentLocation(context: Context, callback: (Double, Double) -> U
     }
     fusedLocationClient.lastLocation
         .addOnSuccessListener { location ->
+            Log.d("hello", "2")
+
             if (location != null) {
                 val lat = location.latitude
                 val long = location.longitude
                 callback(lat, long)
+            } else {
+                Log.d("hello", "else")
             }
         }
         .addOnFailureListener { exception ->
